@@ -1,0 +1,33 @@
+'''s = '{:^60}\n'.format('HyperSmart Solutions')
+s_1 = '{:^60}\n'.format('Enhancing The Future')
+s_2 = '{:^60}\n'.format(' ')
+s_3 = '{:^60}\n'.format(' ')
+s_4 = '{:^60}\n'.format('Universidade of Aveiro')
+s_5 = '{:^60}\n'.format('Tel.: 234 370 200')
+s_6 = '{:^60}\n'.format(' ')
+s_7 = '{:^60}\n'.format('HyperSmart Solutions')
+s_8 = '{:^60}\n'.format('Sede: Campus Universitário de Santiago, ')
+s_9 = '{:^60}\n'.format('3810-193 Aveiro')
+s_10 = '{:^60}\n'.format('Portugal')
+s_11 = '{:^60}\n'.format(' ')
+s_12 = '{:^60}\n'.format('Artigos')
+s_13 = '   {:-^54}   \n'.format('')
+header = s + s_1 + s_2 + s_3 + s_4 + s_5 + s_6 + s_7 + s_8 + s_9 + s_10 + s_11 + s_12 + s_13
+f = open('header.txt', mode='w')
+f.write(header)
+f.close()'''
+'''s = '   {:-^54}   \n'.format('')
+s_1 = '{:^60}\n'.format('Fatura necessária para troca em 15 dias')
+s_2 = '   {:-^54}   \n'.format('')
+s_3 = '{:^60}\n'.format('Apoio ao Cliente')
+s_4 = '{:^60}\n'.format('760 200 300 / 760 200 400 (24 horas)')
+s_5 = '   {:-^54}   \n'.format('')
+s_6 = '{:^60}\n'.format('www.hypersmart.pt')
+s_7 = '   {:-^54}   \n'.format('')
+s_8 = '{:^60}\n'.format('HyperSmart Solutions')
+s_9 = '{:^60}\n'.format('Enhancing The Future')
+bottom = s + s_1 + s_2 + s_3 + s_4 + s_5 + s_6 + s_7 + s_8 + s_9
+f = open('bottom.txt', mode='w')
+f.write(bottom)
+f.close()'''
+

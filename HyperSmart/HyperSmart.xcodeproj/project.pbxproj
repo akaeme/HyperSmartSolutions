@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B01F523A1FB3641000FF0A9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01F52391FB3641000FF0A9C /* AppDelegate.swift */; };
+		B01F523C1FB3641000FF0A9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01F523B1FB3641000FF0A9C /* ViewController.swift */; };
+		B01F523F1FB3641000FF0A9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B01F523D1FB3641000FF0A9C /* Main.storyboard */; };
+		B01F52411FB3641000FF0A9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B01F52401FB3641000FF0A9C /* Assets.xcassets */; };
+		B01F52441FB3641000FF0A9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B01F52421FB3641000FF0A9C /* LaunchScreen.storyboard */; };
+		B0FD60431FC9DFB000CCA8DB /* SwiftyZeroMQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0FD60361FC9DFA400CCA8DB /* SwiftyZeroMQ.framework */; };
+		B0FD60441FC9DFB000CCA8DB /* SwiftyZeroMQ.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B0FD60361FC9DFA400CCA8DB /* SwiftyZeroMQ.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B0FD60481FC9E14700CCA8DB /* QRController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FD60471FC9E14700CCA8DB /* QRController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B0FD60351FC9DFA400CCA8DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0FD602B1FC9DFA300CCA8DB /* SwiftyZeroMQ.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 04D84E331DB637E800AD9652;
+			remoteInfo = "SwiftyZeroMQ-iOS";
+		};
+		B0FD60371FC9DFA400CCA8DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0FD602B1FC9DFA300CCA8DB /* SwiftyZeroMQ.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 04D84E3C1DB637E800AD9652;
+			remoteInfo = "SwiftyZeroMQ-iOS Tests";
+		};
+		B0FD60391FC9DFA400CCA8DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0FD602B1FC9DFA300CCA8DB /* SwiftyZeroMQ.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 04AA85E01DC9EF0E0026AE5E;
+			remoteInfo = "SwiftyZeroMQ-macOS";
+		};
+		B0FD603B1FC9DFA400CCA8DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0FD602B1FC9DFA300CCA8DB /* SwiftyZeroMQ.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 04AA85E81DC9EF0E0026AE5E;
+			remoteInfo = "SwiftyZeroMQ-macOSTests";
+		};
+		B0FD603D1FC9DFA400CCA8DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0FD602B1FC9DFA300CCA8DB /* SwiftyZeroMQ.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 04AA857F1DC9E5770026AE5E;
+			remoteInfo = "SwiftyZeroMQ-tvOS";
+		};
+		B0FD603F1FC9DFA400CCA8DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0FD602B1FC9DFA300CCA8DB /* SwiftyZeroMQ.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 04AA85871DC9E5780026AE5E;
+			remoteInfo = "SwiftyZeroMQ-tvOSTests";
+		};
+		B0FD60411FC9DFA400CCA8DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0FD602B1FC9DFA300CCA8DB /* SwiftyZeroMQ.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 04AA85651DC9E1390026AE5E;
+			remoteInfo = "SwiftyZeroMQ-watchOS";
+		};
+		B0FD60451FC9DFB000CCA8DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0FD602B1FC9DFA300CCA8DB /* SwiftyZeroMQ.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 04D84E321DB637E800AD9652;
+			remoteInfo = "SwiftyZeroMQ-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B01F52671FB3647200FF0A9C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B0FD60441FC9DFB000CCA8DB /* SwiftyZeroMQ.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B01F52361FB3641000FF0A9C /* HyperSmart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HyperSmart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B01F52391FB3641000FF0A9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B01F523B1FB3641000FF0A9C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B01F523E1FB3641000FF0A9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B01F52401FB3641000FF0A9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B01F52431FB3641000FF0A9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B01F52451FB3641000FF0A9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0FD602B1FC9DFA300CCA8DB /* SwiftyZeroMQ.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyZeroMQ.xcodeproj; path = "SwiftyZeroMQ-1.0.25/SwiftyZeroMQ.xcodeproj"; sourceTree = "<group>"; };
+		B0FD60471FC9E14700CCA8DB /* QRController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B01F52331FB3641000FF0A9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0FD60431FC9DFB000CCA8DB /* SwiftyZeroMQ.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B01F522D1FB3641000FF0A9C = {
+			isa = PBXGroup;
+			children = (
+				B0FD602B1FC9DFA300CCA8DB /* SwiftyZeroMQ.xcodeproj */,
+				B01F52381FB3641000FF0A9C /* HyperSmart */,
+				B01F52371FB3641000FF0A9C /* Products */,
+				B0E035F31FBC40A100F711B4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B01F52371FB3641000FF0A9C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B01F52361FB3641000FF0A9C /* HyperSmart.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B01F52381FB3641000FF0A9C /* HyperSmart */ = {
+			isa = PBXGroup;
+			children = (
+				B01F52391FB3641000FF0A9C /* AppDelegate.swift */,
+				B01F523B1FB3641000FF0A9C /* ViewController.swift */,
+				B0FD60471FC9E14700CCA8DB /* QRController.swift */,
+				B01F523D1FB3641000FF0A9C /* Main.storyboard */,
+				B01F52401FB3641000FF0A9C /* Assets.xcassets */,
+				B01F52421FB3641000FF0A9C /* LaunchScreen.storyboard */,
+				B01F52451FB3641000FF0A9C /* Info.plist */,
+			);
+			path = HyperSmart;
+			sourceTree = "<group>";
+		};
+		B0E035F31FBC40A100F711B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B0FD602C1FC9DFA300CCA8DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B0FD60361FC9DFA400CCA8DB /* SwiftyZeroMQ.framework */,
+				B0FD60381FC9DFA400CCA8DB /* SwiftyZeroMQ-iOS Tests.xctest */,
+				B0FD603A1FC9DFA400CCA8DB /* SwiftyZeroMQ.framework */,
+				B0FD603C1FC9DFA400CCA8DB /* SwiftyZeroMQ-macOSTests.xctest */,
+				B0FD603E1FC9DFA400CCA8DB /* SwiftyZeroMQ.framework */,
+				B0FD60401FC9DFA400CCA8DB /* SwiftyZeroMQ-tvOSTests.xctest */,
+				B0FD60421FC9DFA400CCA8DB /* SwiftyZeroMQ.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B01F52351FB3641000FF0A9C /* HyperSmart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B01F52481FB3641000FF0A9C /* Build configuration list for PBXNativeTarget "HyperSmart" */;
+			buildPhases = (
+				B01F52321FB3641000FF0A9C /* Sources */,
+				B01F52331FB3641000FF0A9C /* Frameworks */,
+				B01F52341FB3641000FF0A9C /* Resources */,
+				B01F52671FB3647200FF0A9C /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B0FD60461FC9DFB000CCA8DB /* PBXTargetDependency */,
+			);
+			name = HyperSmart;
+			productName = HyperSmart;
+			productReference = B01F52361FB3641000FF0A9C /* HyperSmart.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B01F522E1FB3641000FF0A9C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Nelson Reverendo";
+				TargetAttributes = {
+					B01F52351FB3641000FF0A9C = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+							com.apple.NearFieldCommunicationTagReading = {
+								enabled = 1;
+							};
+							com.apple.WAC = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = B01F52311FB3641000FF0A9C /* Build configuration list for PBXProject "HyperSmart" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B01F522D1FB3641000FF0A9C;
+			productRefGroup = B01F52371FB3641000FF0A9C /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B0FD602C1FC9DFA300CCA8DB /* Products */;
+					ProjectRef = B0FD602B1FC9DFA300CCA8DB /* SwiftyZeroMQ.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				B01F52351FB3641000FF0A9C /* HyperSmart */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B0FD60361FC9DFA400CCA8DB /* SwiftyZeroMQ.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyZeroMQ.framework;
+			remoteRef = B0FD60351FC9DFA400CCA8DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B0FD60381FC9DFA400CCA8DB /* SwiftyZeroMQ-iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SwiftyZeroMQ-iOS Tests.xctest";
+			remoteRef = B0FD60371FC9DFA400CCA8DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B0FD603A1FC9DFA400CCA8DB /* SwiftyZeroMQ.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyZeroMQ.framework;
+			remoteRef = B0FD60391FC9DFA400CCA8DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B0FD603C1FC9DFA400CCA8DB /* SwiftyZeroMQ-macOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SwiftyZeroMQ-macOSTests.xctest";
+			remoteRef = B0FD603B1FC9DFA400CCA8DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B0FD603E1FC9DFA400CCA8DB /* SwiftyZeroMQ.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyZeroMQ.framework;
+			remoteRef = B0FD603D1FC9DFA400CCA8DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B0FD60401FC9DFA400CCA8DB /* SwiftyZeroMQ-tvOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SwiftyZeroMQ-tvOSTests.xctest";
+			remoteRef = B0FD603F1FC9DFA400CCA8DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B0FD60421FC9DFA400CCA8DB /* SwiftyZeroMQ.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyZeroMQ.framework;
+			remoteRef = B0FD60411FC9DFA400CCA8DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B01F52341FB3641000FF0A9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B01F52441FB3641000FF0A9C /* LaunchScreen.storyboard in Resources */,
+				B01F52411FB3641000FF0A9C /* Assets.xcassets in Resources */,
+				B01F523F1FB3641000FF0A9C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B01F52321FB3641000FF0A9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0FD60481FC9E14700CCA8DB /* QRController.swift in Sources */,
+				B01F523C1FB3641000FF0A9C /* ViewController.swift in Sources */,
+				B01F523A1FB3641000FF0A9C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B0FD60461FC9DFB000CCA8DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SwiftyZeroMQ-iOS";
+			targetProxy = B0FD60451FC9DFB000CCA8DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B01F523D1FB3641000FF0A9C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B01F523E1FB3641000FF0A9C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B01F52421FB3641000FF0A9C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B01F52431FB3641000FF0A9C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B01F52461FB3641000FF0A9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B01F52471FB3641000FF0A9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B01F52491FB3641000FF0A9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6K3J3F797N;
+				INFOPLIST_FILE = HyperSmart/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ua.pt.HyperSmart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B01F524A1FB3641000FF0A9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6K3J3F797N;
+				INFOPLIST_FILE = HyperSmart/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ua.pt.HyperSmart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B01F52311FB3641000FF0A9C /* Build configuration list for PBXProject "HyperSmart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B01F52461FB3641000FF0A9C /* Debug */,
+				B01F52471FB3641000FF0A9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B01F52481FB3641000FF0A9C /* Build configuration list for PBXNativeTarget "HyperSmart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B01F52491FB3641000FF0A9C /* Debug */,
+				B01F524A1FB3641000FF0A9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B01F522E1FB3641000FF0A9C /* Project object */;
+}

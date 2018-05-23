@@ -1,0 +1,120 @@
+{% extends "base.html" %}
+{% set active_page = "overview" %}
+
+{% block head %}
+        {{ super() }}
+{% endblock %}
+
+{% block body %}
+<div class="content" >
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="header">
+                        <h4 class="title">Encoding Gate</h4>
+                        <p class="category">@ Warehouse No. 1</p>
+                    </div>
+                    <div class="content table-responsive table-full-width">
+                        <table class="table table-hover" id="table_products" style="font-size: 12px; padding: 8px 8px">
+                            <thead>
+                                <th>GTIN14</th>
+                                <th>Name</th>
+                                <th>Unit</th>
+                                <th>Price (€)</th>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                        <div class="footer">
+                            <hr>
+                            <div class="stats">
+                                <i class="fa fa-circle fa-pulse" style="color: #EF3B3A;"></i> Live Update
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="header">
+                        <h4 class="title">Products</h4>
+                        <p class="category">@ Warehouse No. 1</p>
+                    </div>
+                    <div class="content table-responsive table-full-width">
+                        <table class="table table-hover" id="table_epc" style="font-size: 12px; padding: 8px 8px">
+                            <thead>
+                                <th>EPC</th>
+                                <th>GTIN14</th>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                        <div class="footer">
+                            <hr>
+                            <div class="stats">
+                                <i class="fa fa-circle fa-pulse" style="color: #EF3B3A;"></i> Live Update
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="header">
+                        <h4 class="title">Products Number</h4>
+                        <p class="category">@ Warehouse No. 1</p>
+                    </div>
+                    <div class="content table-responsive table-full-width">
+                        <div id="g1"></div>
+                        <div class="footer">
+                            <hr>
+                            <div class="stats">
+                                <i class="fa fa-circle fa-pulse" style="color: #EF3B3A;"></i> Live Update
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="header">
+                        <h4 class="title">Available Space</h4>
+                        <p class="category">@ Warehouse No. 1</p>
+                    </div>
+                    <div class="content">
+                        <div id="g2"></div>
+                        <div class="footer">
+                            <hr>
+                            <div class="stats">
+                                <i class="fa fa-circle" style="color: #EF3B3A;"></i> Live Update
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="header">
+                        <h4 class="title">Products Chart</h4>
+                        <p class="category">@ Warehouse No. 1</p>
+                    </div>
+                    <div class="content">
+                        <div id="products_chart" class="ct-chart"></div>
+                        <div class="footer">
+                            <div class="legend">
+                                <i class="fa fa-circle text-info"></i> Products Number
+                            </div>
+                            <hr>
+                            <div class="stats">
+                                <i class="fa fa-circle fa-pulse" style="color: #EF3B3A;"></i> Live Update
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="{{ url_for('static', filename='js/demo.js') }}"></script>
+{% endblock %}

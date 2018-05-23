@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% set active_page = "warehouse_control" %}
+
+{% block head %}
+        <link rel="icon" type="image/png" href="{{ url_for('static', filename='media/room_control/favicon.ico') }}">
+        <title>Warehouse Control</title>
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="header">
+                        <h4 class="title">All products - Encoding Gate</h4>
+                        <p class="category">@ Warehouse No. 1</p>
+                    </div>
+                    <div class="content table-responsive table-full-width">
+                        <table class="table table-hover" id="table_all" style="font-size: 12px; padding: 8px 8px">
+                            <thead>
+                                <th>GTIN14</th>
+                                <th>Name</th>
+                                <th>Unit</th>
+                                <th>Epc</th>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="header">
+                        <h4 class="title">Epcs</h4>
+                        <p class="category">@ Warehouse No. 1</p>
+                    </div>
+                    <div class="content table-responsive table-full-width" style="font-size: 12px;">
+                        <ul id="epcs_list">
+                            <li id="0">Product not selected</li>
+                        </ul> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='js/control.js') }}"></script>
+{% endblock %}
