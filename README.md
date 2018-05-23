@@ -14,20 +14,23 @@ Better for both.
 * [BARCODE](http://www.gtin.info/itf-14-barcodes/) - BARCODE specification
 
 ## Setup
-![Gate Structure](imgs/image_1.jpg)
+![Gate Structure](imgs/structure.jpg)
 
 ## System General Architecture
-![Project Architecture](imgs/image_2.png)
+![Project Architecture](imgs/image_1.png)
 
-##Dashboard Interface
-![Login](imgs/image_3.png) ![Home](imgs/image_4.png)
+## Dashboard Interface
+![Login](imgs/dash_1.png) ![Home](imgs/dash_2.png) ![Warehouses](imgs/dash_3.png)
+
+## IOS App
+![Interface](imgs/ios.jpg)
 
 ## Authors
 
-* **Rafael Almeida** - [](https://github.com/almeidaRafael94)
-* **Fábio Silva** - [](https://github.com/akaeme)
-* **Nelson Reverendo** - [](https://github.com/nelsonreverendo)
-* **Rui Chaves** - [](https://github.com/ruiac)
+* **Rafael Almeida** - [GitHub](https://github.com/almeidaRafael94)
+* **Fábio Silva** - [GitHub](https://github.com/akaeme)
+* **Nelson Reverendo** - [GitHub](https://github.com/nelsonreverendo)
+* **Rui Chaves** - [GitHub](https://github.com/ruiac)
 
 ## License
 
